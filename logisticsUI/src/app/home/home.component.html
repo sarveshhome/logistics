@@ -1,4 +1,35 @@
 <!--The content below is only a placeholder and can be replaced.-->
+<nav class="navbar navbar-expand-md bg-light navbar-default">
+  <a class="navbar-brand" href="#">logistics</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">        
+        <a [routerLink]="['/Home']" class="nav-link" routerLinkActive="router-link-active">Home</a>
+      </li>
+      <li class="nav-item">        
+        <a [routerLink]="['/about']" class="nav-link" routerLinkActive="active">About</a>      
+      </li>
+      <li class="nav-item">       
+        <a [routerLink]="['/contact']" class="nav-link" routerLinkActive="active">Contact</a>
+      </li>          
+    </ul>
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Login</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Register</a>
+      </li>
+    </ul>
+  </div>  
+</nav>
+<br>
+
+<div class="container">
+  
 <div style="text-align:center">
   <h1>
     Welcome to {{ title }}!
@@ -7,4 +38,7 @@
 </div>
 
 
+
+
+</div>
 
