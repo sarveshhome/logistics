@@ -2,11 +2,15 @@
 logistics UI Project
 
 
-# Project setup
+# Running the Application
 
-install `npm install nativescript -g`
+1. install `npm install nativescript -g`
 
-install `npm install -g @angular/cli@latest`
+2. install `npm install -g @angular/cli@latest`
+
+3. Run `npm install`
+
+3. Run `ng serve --o`
 
 
 
