@@ -1,0 +1,61 @@
+<app-home></app-home>
+<div class="">
+  <header class="sp-header">
+    <div class="sp-logo-wrap pull-left">
+      <a href="javascript:void(0)">
+        <span class="brand-text"><img  src="../../../assets/images/logo.png" alt="logistics"/></span>
+      </a>
+    </div>
+    <div class="clearfix"></div>
+  </header>
+  
+  <!-- Main Content -->
+  <div class="page-wrapper pa-0 ma-0 auth-page">
+    <div class="container">
+      <!-- Row -->
+      <div class="table-struct full-width full-height">
+        <div class="table-cell vertical-align-middle auth-form-wrap">
+          <div class="auth-form  ml-auto mr-auto no-float card-view pt-30 pb-30">
+            <div class="row">
+              <div class="col-sm-3"></div>
+              <div class="col-sm-6">
+                <div class="mb-30">
+                  <h3 class="text-center txt-dark mb-10">Sign in to logistics</h3>
+                  <h6 class="text-center nonecase-font txt-grey">Enter your details below</h6>
+                </div>	
+                <div class="form-wrap">
+                  <form action="#" [formGroup]="loginForm" (ngSubmit)="login(loginForm)">
+                    <div class="form-group">
+                      <label class="control-label mb-10" for="exampleInputEmail_2">Email address</label>
+                      <input type="email" formControlName="username" class="form-control" required="" id="exampleInputEmail_2" placeholder="Enter email">
+                      <div *ngIf="loginForm.controls.username.dirty && loginForm.controls.username.errors" [ngClass]="{'show': loginForm.controls.username.errors}" class="invalid-feedback">
+                        <div *ngIf="loginForm.controls.username.errors.required">Email is required</div>
+                        <div *ngIf="loginForm.controls.username.errors.email">Email must be a valid email address</div>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="pull-left control-label mb-10" for="exampleInputpwd_2">Password</label>
+                      <a class="capitalize-font txt-danger block mb-10 pull-right font-12" href="javascript:void(0)" [routerLink]="['/forgot-password']">forgot password ?</a>
+                      <div class="clearfix"></div>
+                      <input type="password" formControlName="password" class="form-control" required="" id="exampleInputpwd_2" placeholder="Enter pwd">
+                      <div *ngIf="loginForm.controls.password.dirty && loginForm.controls.password.errors" [ngClass]="{'show': loginForm.controls.password.errors}" class="invalid-feedback">
+                        <div *ngIf="loginForm.controls.password.errors.required">Password is required</div>
+                      </div>
+                    </div>
+                    <div class="form-group text-center">
+                      <button type="submit" class="btn btn-danger btn-rounded">sign in</button>
+                    </div>
+                  </form>
+                </div>
+              </div>	
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /Row -->	
+    </div>
+    
+  </div>
+  <!-- /Main Content -->
+  
+</div>
