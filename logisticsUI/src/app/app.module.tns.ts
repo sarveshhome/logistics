@@ -8,6 +8,8 @@ import { AboutComponent } from './components/site/about/about.component';
 import { ContactComponent } from './components/site/contact/contact.component';
 import { AddComponent } from './components/admin/masters/add/add.component';
 import { ListComponent } from './components/admin/masters/list/list.component';
+import { LoginComponent } from './components/login/login.component';
+import { MastertypeComponent } from './components/admin/mastertype/mastertype.component';
 
 
 // Uncomment and add to NgModule imports if you need to use two-way binding
@@ -24,6 +26,8 @@ import { ListComponent } from './components/admin/masters/list/list.component';
     ContactComponent,
     AddComponent,
     ListComponent,
+    LoginComponent,
+    MastertypeComponent,
   ],
   imports: [
     NativeScriptModule,
